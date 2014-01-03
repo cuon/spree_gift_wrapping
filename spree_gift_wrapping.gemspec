@@ -7,8 +7,8 @@ require "spree_gift_wrapping/version"
 Gem::Specification.new do |s|
   s.name        = "spree_gift_wrapping"
   s.version     = SpreeGiftWrapping::VERSION
-  s.authors     = ["Chen ZhongXue"]
-  s.email       = ["xmpolaris@gmail.com"]
+  s.authors     = ["Cuon"]
+  s.email       = ["info@cuon.co.jp"]
   s.homepage    = "https://github.com/xmpolaris/spree_gift_wrapping"
   s.summary     = "Gift Wrapping extension for spree checkout."
   s.description = "Gift Wrapping extension for spree checkout."
