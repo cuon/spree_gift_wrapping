@@ -1,14 +1,17 @@
-class Spree::GiftWrapping < ActiveRecord::Base
-  attr_accessible :description, :image_attributes, :image
+module Spree
+  class GiftWrapping < ActiveRecord::Base
+    #  attr_accessible :description, :image_attributes, :image
+    validates_presence_of :description
 
-  validates_presence_of :description
+#TODO
+#    calculated_adjustments
 
-  calculated_adjustments
-  has_one :image, :as => :viewable, :class_name => Spree::Image
+    has_one :image, :as => :viewable, :class_name => Spree::Image
 
-  accepts_nested_attributes_for :image
+    accepts_nested_attributes_for :image
 
-  def adjustment_label
-    I18n.t(:gift_wrapping)
+    def adjustment_label
+      I18n.t(:gift_wrapping)
+    end
   end
 end

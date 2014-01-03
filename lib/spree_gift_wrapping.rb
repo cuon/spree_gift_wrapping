@@ -1,3 +1,5 @@
+require "spree_core"
+
 require "spree_gift_wrapping/engine"
 require_dependency 'spree/core/environment_extension'
 require_dependency 'spree/core/environment'

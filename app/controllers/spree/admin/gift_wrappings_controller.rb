@@ -21,6 +21,15 @@ module Spree
         @gift_wrapping = Spree::GiftWrapping.find(params[:id])
       end
 
+      # 2013.1.3
+      module StrongParameters
+        private
+        def gift_wrapping_params
+          params.require(:gift_wrapping).permit(:description, :image_attributes, :image)
+        end
+      end
+      include StrongParameters
+
       protected
       def collection
         return @collection if @collection.present?
@@ -30,8 +39,12 @@ module Spree
       end
 
       def load_data
-        @calculators = GiftWrapping.calculators.sort_by(&:name)
+#        @calculators = GiftWrapping.calculators.sort_by(&:name)
+        @calculators = Spree::GiftWrapping.calculators.sort_by(&:name)
       end
+
+
     end
+
   end
 end

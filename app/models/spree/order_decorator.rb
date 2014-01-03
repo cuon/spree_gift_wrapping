@@ -1,5 +1,8 @@
 Spree::Order.class_eval do
-  attr_accessible :gift_wrapping_id
+#  attr_accessible :gift_wrapping_id
+
+  # add 2013.1.4 cuon
+  belongs_to :shipping_method
 
   belongs_to :gift_wrapping
   has_many :wrapping_orders, :dependent => :destroy

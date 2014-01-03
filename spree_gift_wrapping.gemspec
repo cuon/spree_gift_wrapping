@@ -16,6 +16,8 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,lib,db}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
+  s.add_dependency 'spree_core', '~> 2.1.0'
+
   s.add_runtime_dependency "rails", "~> 4.0.0"
   s.add_runtime_dependency "spree", "~> 2.1.0"
 end
