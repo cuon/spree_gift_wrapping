@@ -5,9 +5,8 @@ This project rocks and uses MIT-LICENSE.
 
 ## Requirements
 
-rails 3.2.x
+rails 4.0.x
 spree 2.1.x
-tested with (spree 1.3.x, rails 3.2.13)
 
 ## Getting started
 You can add this gem into your Gemfile with:
