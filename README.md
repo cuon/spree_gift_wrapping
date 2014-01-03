@@ -6,7 +6,7 @@ This project rocks and uses MIT-LICENSE.
 ## Requirements
 
 rails 3.2.x
-spree 2.0.x
+spree 2.1.x
 tested with (spree 1.3.x, rails 3.2.13)
 
 ## Getting started
