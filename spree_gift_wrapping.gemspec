@@ -17,5 +17,5 @@ Gem::Specification.new do |s|
   s.test_files = Dir["test/**/*"]
 
   s.add_runtime_dependency "rails", "~> 3.2.10"
-  s.add_runtime_dependency "spree", "~> 1.3.0"
+  s.add_runtime_dependency "spree", "~> 2.0.0"
 end
